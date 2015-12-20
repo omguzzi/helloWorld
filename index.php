@@ -1,55 +1,39 @@
-<?php 
-	$login = array(
-		'bryan' => 'conzone', 
-		'uzzi' => 'carninja',
-		'ninja' => 'max'
-		);
-	
+<?php
 
-	$username = $_POST['username'];
-	$password = $_POST['password'];
-	
-
-	if(!empty($_POST)){
-		if (array_key_exists($username, $login) && $password == $login[$username]) {
-			setcookie('loggedin', '1', time() + 86400, '/', 'uzzi.dev');
-			header( 'Location: admin.php' );
-			exit;
-		}
-		else{
-			$error = "Error: Try again.";
-		}
-	}		
 ?>
 
-<!DOCTYPE html>
+<!DOCTYPE <!DOCTYPE html>
 <html>
 <head>
-	<title>Uzzi's PHP Form</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!-- Basic Information -->
+	<meta charset="utf-8">
+	<title>My Portfolio</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  	<meta name="description" content="">
+  	<meta name="author" content="">
+
+	<!-- Styling Area -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- More Meta Tags -->
+	<meta property="og:title" content="Usman Chowdhry Portfolio" />
+  	<meta property="og:description" content="Usman Chowdhry's Developer Portfolio. Visit for more details." />
+  	<!-- Fill this image whenever possible -->
+  	<meta property="og:image" content="" />  
+ 	<meta property="og:url" content="http://omguzzi.com" />
+
 </head>
-
 <body>
+	<?php 
+		include 'header.php';
+		include 'about.php';
+	?>
 
-	<header>
-		<h1>Uzzi's Website</h1>
-	</header>
-
-	<section class="main">
-		<div class="my-form">
-			<form id="testform" action="index.php" method="post">
-	 		<p id="formtitle">Username:</p><br>
-	  		<input type="text" name="username">
-	  		<br>
-	  		<p id="formtitle">Password:</p><br>
-	  		<input type="password" name="password">
-	  		<?php echo $error ?>
-	  		<br><br>
-	  		<input type="submit" value="Log In">
-
-		</form>
-		</div>
-	</section>
-
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="js/smooth-scroll.js"></script>
+	<script src="js/script.js"></script>
+	<script src="js/bootstrap.js"></script>
 </body>
 </html>

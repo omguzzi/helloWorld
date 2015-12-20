@@ -1,31 +1,158 @@
-body{
-	background-color: #000000;
-	color: white;
-	font-family: sans-serif;
-}
+@font-face {
+  font-family: "Raleway-Black";
+  src: url("../fonts/raleway/Raleway-Black.ttf"), url("../fonts/raleway/Raleway-Black.ttf");
+  /* IE */ }
+@font-face {
+  font-family: "Raleway-SemiBold";
+  src: url("../fonts/raleway/Raleway-SemiBold.ttf"), url("../fonts/raleway/Raleway-SemiBold.ttf");
+  /* IE */ }
+@font-face {
+  font-family: "Raleway-Regular";
+  src: url("../fonts/raleway/Raleway-Regular.ttf"), url("../fonts/raleway/Raleway-Regular.ttf");
+  /* IE */ }
+@font-face {
+  font-family: "Raleway-Italic";
+  src: url("../fonts/raleway/Raleway-Italic.ttf"), url("../fonts/raleway/Raleway-Italic.ttf");
+  /* IE */ }
+body {
+  background-color: #d3d3d3;
+  color: #ffffff; }
 
-header{
-	width: 500px;
-	margin: auto;
-}
+h1 {
+  font-family: Raleway-Black, sans-serif;
+  text-transform: uppercase; }
 
-header h1{
-	padding-top: 15px;
-	margin: auto;
-	
-}
+.navbar {
+  position: absolute;
+  right: 0;
+  margin: 4.75%;
+  min-height: 50px;
+  border: none;
+  font-family: Raleway-Regular, 'sans-serif'; }
 
-.my-form{
-	width: 135px;
-	margin: auto;
-}
+.navbar-nav a {
+  text-align: right; }
 
-#testform{
-	padding-top: 50px;
-	text-align: center;
-}
+.navbar-default {
+  background-color: transparent; }
+  .navbar-default .navbar-nav > li > a {
+    color: white; }
+    .navbar-default .navbar-nav > li > a:hover {
+      color: #9db4be;
+      font-family: Raleway-SemiBold, 'sans-serif'; }
 
-#formtitle{
-	margin: 10px 0 -10px 0;
-	padding: 0;
-}
+.navbar-toggle {
+  border: 2px solid; }
+
+.navbar-default .navbar-toggle {
+  border-color: #9db4be; }
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #222222; }
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #ffffff; }
+
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border: none; }
+
+@media (max-width: 5000px) {
+  .navbar-collapse.collapse {
+    display: none !important; }
+
+  .navbar-collapse.collapse.in {
+    display: block !important; }
+
+  .navbar-header .collapse, .navbar-toggle {
+    display: block !important; }
+
+  .navbar-header {
+    float: none; } }
+.landingpage {
+  background: url("../img/header/bg.jpg") fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  top: 0px;
+  height: 100%;
+  min-height: 300px;
+  display: block; }
+
+.bgoverlay {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 100%;
+  z-index: 1; }
+
+.smallDivide {
+  width: 355px;
+  border-bottom: 2px solid #9db4be;
+  margin: 10px auto 10px; }
+
+#uzzi-logo {
+  width: 35px;
+  position: absolute;
+  opacity: 1;
+  margin: 5%;
+  opacity: 0.8; }
+
+.header_section {
+  min-height: 100%;
+  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh;
+  /* These two lines are counted as one :-)       */
+  position: relative;
+  padding-top: 20%; }
+  .header_section h1 {
+    text-align: center;
+    margin-top: 0;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s; }
+  .header_section .caption {
+    font-family: Raleway-Italic, 'sans-serif';
+    color: #9db4be;
+    text-align: center;
+    margin: -8px auto 0;
+    width: 355px; }
+
+.bottom-portion {
+  font-family: Raleway-Italic, 'sans-serif';
+  font-weight: bold;
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
+  opacity: 0.3; }
+  .bottom-portion a {
+    color: #ffffff;
+    text-decoration: none; }
+    .bottom-portion a:hover {
+      text-decoration: none; }
+  .bottom-portion img {
+    width: 10%;
+    position: absolute;
+    bottom: 0;
+    left: 51%; }
+  .bottom-portion p {
+    position: relative;
+    font-size: 22px;
+    width: 85px;
+    margin: auto; }
+
+@media screen and (max-width: 475px) {
+  #uzzi-logo {
+    display: none; } }
+@media screen and (max-width: 630px) {
+  .bottom-portion img {
+    display: none; } }
+#about {
+  background-color: #ffffff;
+  color: #4c4c4c;
+  height: 100%;
+  font-family: Raleway-Regular, 'sans-serif'; }

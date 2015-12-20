@@ -1,0 +1,33 @@
+@font-face{
+    font-family: "Raleway-Black";
+    src: url('../fonts/raleway/Raleway-Black.ttf'),
+    url('../fonts/raleway/Raleway-Black.ttf'); /* IE */
+}
+
+@font-face{
+    font-family: "Raleway-SemiBold";
+    src: url('../fonts/raleway/Raleway-SemiBold.ttf'),
+    url('../fonts/raleway/Raleway-SemiBold.ttf'); /* IE */
+}
+
+@font-face{
+    font-family: "Raleway-Regular";
+    src: url('../fonts/raleway/Raleway-Regular.ttf'),
+    url('../fonts/raleway/Raleway-Regular.ttf'); /* IE */
+}
+
+@font-face{
+    font-family: "Raleway-Italic";
+    src: url('../fonts/raleway/Raleway-Italic.ttf'),
+    url('../fonts/raleway/Raleway-Italic.ttf'); /* IE */
+}
+
+body{
+	background-color: #d3d3d3;
+	color: #ffffff;
+}
+
+h1{
+	font-family: Raleway-Black, sans-serif;
+	text-transform: uppercase;
+}

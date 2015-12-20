@@ -1,0 +1,106 @@
+//Background
+.landingpage{
+	background: url('../img/header/bg.jpg') fixed;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    top: 0px;
+    height: 100%;
+    min-height: 300px;
+    display: block;
+}
+
+.bgoverlay{
+    position: absolute;
+    background: rgba(0,0,0,.5);
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: 1;
+} 
+
+//Container
+.smallDivide {
+    width: 355px;
+    border-bottom: 2px solid #9db4be;
+    margin: 10px auto 10px;
+}
+
+#uzzi-logo{
+  			width: 35px;
+  			position: absolute;
+  			opacity: 1;
+  			margin: 5%;
+  			opacity: 0.8;
+  		}
+
+.header_section{
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+  position: relative;
+  padding-top: 20%;
+
+		h1{
+			text-align: center;
+			margin-top: 0;
+			-webkit-animation-duration: 3s;
+  			animation-duration: 3s;
+		}
+
+		.caption
+		{
+			font-family: Raleway-Italic, 'sans-serif';
+			color: #9db4be;
+			text-align: center;
+			margin: -8px auto 0;
+			width: 355px;
+		}
+}
+
+.bottom-portion{
+  font-family: Raleway-Italic, 'sans-serif';
+  font-weight: bold;
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
+  opacity: 0.3;
+
+    a{
+      color: #ffffff;
+      text-decoration: none;
+
+        &:hover{
+          text-decoration: none;
+        }
+    }
+    
+    img{
+      width: 10%;
+      position: absolute;
+      bottom: 0;
+      left: 51%;
+    }
+
+    p{
+      position: relative;
+      font-size: 22px;
+      width: 85px;
+      margin: auto;
+    }
+}
+
+//Media Devices
+@media screen and (max-width: 475px) {
+    #uzzi-logo {
+        	display: none;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .bottom-portion img{
+          display: none;
+    }
+}
