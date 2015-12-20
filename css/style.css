@@ -1,0 +1,31 @@
+body{
+	background-color: #000000;
+	color: white;
+	font-family: sans-serif;
+}
+
+header{
+	width: 500px;
+	margin: auto;
+}
+
+header h1{
+	padding-top: 15px;
+	margin: auto;
+	
+}
+
+.my-form{
+	width: 135px;
+	margin: auto;
+}
+
+#testform{
+	padding-top: 50px;
+	text-align: center;
+}
+
+#formtitle{
+	margin: 10px 0 -10px 0;
+	padding: 0;
+}
